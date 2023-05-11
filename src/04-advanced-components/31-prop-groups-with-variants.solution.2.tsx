@@ -1,5 +1,3 @@
-// WIP
-
 import { ComponentProps } from "react";
 
 const buttonPropsMap = {

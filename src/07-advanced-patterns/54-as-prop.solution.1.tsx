@@ -9,4 +9,12 @@ export const Component = (props: AsProps) => {
   return <Comp {...(props as any)}></Comp>;
 };
 
-const yeah = <Component as="a" href="awdawd"></Component>;
+const example1 = <Component as="a" href="awdawd"></Component>;
+
+const example2 = (
+  <Component
+    as="div"
+    // @ts-expect-error: Property 'href' does not exist
+    href="awdawd"
+  ></Component>
+);
